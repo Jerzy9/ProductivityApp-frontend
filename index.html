@@ -6,6 +6,7 @@
     <meta name="todo app" content="simple productivity app">
     <link href="./style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
  </head>
  <body>
@@ -14,39 +15,115 @@
         <p class="header-title">Productivity App</p>
     </header>
     <time>
-        <div class="time-object"> 15:49:31</div>
-        <div class="time-object">Tuesday</div>
-        <div class="time-object">7.07.2020</div>
+        <div class="clock">
+            <div id="hours">00</div>:
+            <div id="minutes">00</div>:
+            <div id="seconds">00</div>
+        </div>
+        <div class="clock" id="day-week-clock">
+            <div id="day-of-the-week">000000</div>
+        </div>
+        <div class="clock">
+            <div id="day">00</div>.
+            <div id="month">00</div>.
+            <div id="year">00</div>
+        </div>
     </time>
     <main>
         <div class="all-tasks">
-        <!-- <ul>
-            <li> -->
-                <div class="task">
-                    
-                    <div class="name">
-                        <div class="name-p">
-                            <p class="name-p"> Umyć naczynia </p>
-                        </div>
-                        <div class="remove-task">
-                            can
-                         </div>
-                    </div>
 
-                        <div class="text">
-                            <p class="text-p"> Ale tylko te z obiadu </p>
-                        </div>
+            <button onclick="showAndHide" id="add-button" type="button"> <img class="bin" src="images/add2.png">Add task</button>
 
-                    </div>
+            <form id="task-form" action="" method="POST">
                 
-            <!-- </li>
-        </ul> -->
+                <input name="name" value="Task's name" id="name-input">
+                <textarea id="text-input">
+                   Your tex
+                </textarea>
+
+
+            </form>
+
+            <!-- first task -->
+                <div class="task">
+                    <div class="name-border">
+                        <div class="name">
+                            <div class="name-p">
+                                <p > Umyć naczynia </p>
+                            </div>
+                            <div class="remove-task-border" >
+                                <div class="remove-task">
+                                    <img class="bin" src="images/bin.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-border">
+                        <div class="text">
+
+                             <div class="text-p">
+                                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quis beatae, natus explicabo consequuntur vel reiciendis quas, facilis officia id eius doloribus sed nihil. Magnam similique excepturi dolor quod consequatur. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- second task -->
+                <div class="task">
+                    <div class="name-border">
+                        <div class="name">
+                            <div class="name-p">
+                                <p > Umyć naczynia </p>
+                            </div>
+                            <div class="remove-task-border" >
+                                <div class="remove-task">
+                                    <img class="bin" src="images/bin.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-border">
+                        <div class="text">
+
+                             <div class="text-p">
+                                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quis beatae, natus explicabo consequuntur vel reiciendis quas, facilis officia id eius doloribus sed nihil. Magnam similique excepturi dolor quod consequatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- third task -->
+                <div class="task">
+                    <div class="name-border">
+                        <div class="name">
+                            <div class="name-p">
+                                <p > Umyć naczynia </p>
+                            </div>
+                            <div class="remove-task-border" >
+                                <div class="remove-task">
+                                    <img class="bin" src="images/bin.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-border">
+                        <div class="text">
+
+                             <div class="text-p">
+                                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
         </div>
     </main>
     <footer>
-
+        <div>Icons made by <a href="https://www.flaticon.com/free-icon/delete_1214428" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
   </div>
+  <script src="scripts.js"></script>
  </body>
 </html>
 

@@ -1,3 +1,4 @@
+
 function time() {
 
     var hours_div = document.getElementById('hours');
@@ -54,7 +55,7 @@ function time() {
 }
 var interval = setInterval(time, 1000);
 
-function showAndHide() {
-    ducument.getElementById('add-button').style.display="inline";
-}
-showAndHide();
+// function showAndHide() {
+//     ducument.getElementById('add-button').style.display="inline";
+// }
+
