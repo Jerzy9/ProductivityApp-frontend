@@ -31,18 +31,24 @@
     </time>
     <main>
         <div class="all-tasks">
-
+            <!-- show and hide -->
             <button onclick="showAndHide" id="add-button" type="button"> <img class="bin" src="images/add2.png">Add task</button>
-
-            <form id="task-form" action="" method="POST">
-                
-                <input name="name" value="Task's name" id="name-input">
-                <textarea id="text-input">
-                   Your tex
-                </textarea>
-
-
-            </form>
+            <!-- task form -->
+            <div class="task-form">
+                <form action="" method="POST">
+                    <div class="input" >
+                        <input name="name" value="Task's name" id="name-input">
+                    </div>
+                    <div class="textarea">
+                        <textarea>
+                        Your tex
+                        </textarea>
+                    </div>
+                    <div class="submit-button">
+                        <input type="submit" value="Dodaj">
+                    </div>
+                </form>
+            </div>
 
             <!-- first task -->
                 <div class="task">

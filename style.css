@@ -160,12 +160,14 @@ background-color: gray;
     justify-content: space-evenly;
     align-items: center;
 }
-#task-form {
+.task-form {
     width: 700px;
 }
-#input-name {
+.input {
     width: 700px;
 }
-#input-text {
-
+.textarea {
+    
+}
+.submit-button {
 }
