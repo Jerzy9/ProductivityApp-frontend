@@ -14,6 +14,7 @@
     <header>
         <p class="header-title">Productivity App</p>
     </header>
+    <!-- timer -->
     <time>
         <div class="clock">
             <div id="hours">00</div>:
@@ -30,26 +31,34 @@
         </div>
     </time>
     <main>
-        <div class="all-tasks">
-            <!-- show and hide -->
-            <button onclick="showAndHide" id="add-button" type="button"> <img class="bin" src="images/add2.png">Add task</button>
-            <!-- task form -->
-            <div class="task-form">
-                <form action="" method="POST">
-                    <div class="input" >
-                        <input name="name" value="Task's name" id="name-input">
+        <!-- show and hide -->
+        <button onclick="showAndHide" id="add-button" type="button"> <img class="bin" src="images/add2.png">Add task</button>
+        <!-- task form -->
+        <div class="task-form">
+            <form action="" method="POST">
+                <div class="name-border">
+                    <div class="name" >
+                        <div class="name-p">
+                            <input type="text" placeholder="Type here..." id="name-input">
+                        </div>
                     </div>
-                    <div class="textarea">
-                        <textarea>
-                        Your tex
-                        </textarea>
+                </div>
+                <div class="text-border">
+                    <div class="text">
+                        <div class="text-p">
+                            <textarea placeholder="Type here..." ></textarea>
+                        </div>
                     </div>
+                </div>
+                <div class="submit-button-border">
                     <div class="submit-button">
                         <input type="submit" value="Dodaj">
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
+        </div>
 
+        <div class="all-tasks">
             <!-- first task -->
                 <div class="task">
                     <div class="name-border">
@@ -67,7 +76,6 @@
 
                     <div class="text-border">
                         <div class="text">
-
                              <div class="text-p">
                                 <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quis beatae, natus explicabo consequuntur vel reiciendis quas, facilis officia id eius doloribus sed nihil. Magnam similique excepturi dolor quod consequatur. </p>
                             </div>
