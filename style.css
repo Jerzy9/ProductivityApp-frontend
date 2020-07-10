@@ -147,7 +147,9 @@ background-color: gray;
     width: 20px;
 }
 .add-task {
-    background-color: red;
+    margin-left: 20px;
+    margin-bottom: 3px;
+    
 }
 .add-button {
     margin-right: auto;
@@ -162,6 +164,7 @@ background-color: gray;
     justify-content: space-evenly;
     border: 1px solid #505050;
     border-radius: 10px;
+    font-size: 16px;
 }
 .task-form {
     width: 700px;
@@ -195,7 +198,7 @@ background-color: gray;
     border-radius: 10px;
  
 }
-.submit-button-border:hover {
+.submit-button-border:hover, .add-button:hover {
     background-color: #b4a202;
 }
 .submit-button {
