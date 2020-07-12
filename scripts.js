@@ -34,7 +34,7 @@ function time() {
         dayOfTheWeekString = "Friday";
     } else if(dayOfTheWeek == 6) {
         dayOfTheWeekString = "Saturday";
-    } else if(dayOfTheWeek == 7) {
+    } else if(dayOfTheWeek == 0) {
         dayOfTheWeekString = "Sunday";
     }
 
