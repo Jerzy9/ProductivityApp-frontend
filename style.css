@@ -1,3 +1,6 @@
+html {
+    height: 100%;
+}
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +15,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #505050;
+    height: 100%;
 }
 .container {
     /* flex:1; */
@@ -72,6 +76,7 @@ main {
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    height: 100%;
  
 }
 @media only screen and (max-width: 1000px) {
